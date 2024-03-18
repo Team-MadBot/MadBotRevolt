@@ -20,7 +20,7 @@ class MadBot(commands.CommandsClient):
         return self.prefix
 
     def setup_hook(self):
-        for path, _, files in os.walk("events"):
+        for path, _, files in os.walk("cogs"):
             for file in files:
                 if not file.endswith(".py"):
                     continue
